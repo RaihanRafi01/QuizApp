@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewBag.Title = "AddQuiz";
+}
+
+<h2>AddQuiz</h2>
+
+<form method="post">
+    <table class="table-bordered">
+        <tr>
+            <td colspan="4">
+                Question:
+                <input type="text" name="Ques" placeholder="" class="form-control" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Option1: <input type="text" name="Option1" placeholder="" class="form-control" /> <input type="radio" id="1" name="RightQues" value=1>
+            </td>
+            <td>
+                Option2: <input type="text" name="Option2" placeholder="" class="form-control" /> <input type="radio" id="2" name="RightQues" value=2>
+            </td>
+            <td>
+                Option3: <input type="text" name="Option3" placeholder="" class="form-control" /> <input type="radio" id="3" name="RightQues" value=3>
+            </td>
+            <td>
+                Option4: <input type="text" name="Option4" placeholder="" class="form-control" />  <input type="radio" id="4" name="RightQues" value=4>
+            </td>
+         </tr>
+        </table>
+        <input type="submit" value="Add" class="btn btn-success" />
+    </form>
+

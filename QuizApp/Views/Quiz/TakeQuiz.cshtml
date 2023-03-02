@@ -1,0 +1,58 @@
+﻿@using QuizApp.EF.Models
+@{
+    ViewBag.Title = "TakeQuiz";
+}
+
+@{
+    //int a = 5;
+    //int ans = 1;
+
+
+
+}
+<h2>TakeQuiz</h2>
+
+
+
+    @foreach (var item in Model)
+    {
+
+        <!-- --> <table class="table-bordered">
+            <tr>
+                Question:
+                @item.Ques
+            </tr>
+            <tr>
+                <td>
+                    @item.Option1 <input type="radio" id="1" name="@item.Id" value=1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @item.Option2 <input type="radio" id="2" name="@item.Id" value=2>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @item.Option3 <input type="radio" id="3" name="@item.Id" value=3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @item.Option4 <input type="radio" id="4" name="@item.Id" value=4>
+                </td>
+            </tr>
+
+        </table>
+
+    }
+<form method="post">
+
+    <input type="text" name="QuesNumber" placeholder="" class="form-control" />
+    <input type="text" name="Correct" placeholder="" class="form-control" />
+    <input type="submit" value="Add" class="btn btn-success" />
+</form>
+
+
+
